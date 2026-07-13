@@ -91,6 +91,8 @@ TODO: 在此处插入一张你的 Vue 监控大屏的截图。一定要截一张
 2. 硬件控制链路实测
 
 TODO: 插入一张你在桌面上接线的 ESP32-CAM、NodeMCU 和 12V 电磁锁的实物照片，展现你的硬件动手能力。
+<img width="3024" height="4032" alt="Image" src="https://github.com/user-attachments/assets/8c6c7009-da91-496d-bb23-e3269a8eefa1" />
+<img width="3024" height="4032" alt="Image" src="https://github.com/user-attachments/assets/5aa511cc-c280-4308-a00a-feb25c15417a" />
 
 ⚙️ 核心技术细节 (For Interviewers)
 视频流防卡死策略：传统做法是让浏览器频繁拉取检测接口，这会导致大量 HTTP 开销。本方案在 Celery 后端将 OpenCV imencode 后的 JPEG 字节流以 5秒过期时间 注入 Redis。FastAPI 通过 multipart/x-mixed-replace 持续读取 Redis 直接推送到前端 <img> 标签，实现了零前端逻辑的高帧率带框直播。
