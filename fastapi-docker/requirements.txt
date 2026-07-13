@@ -1,0 +1,26 @@
+fastapi
+uvicorn
+pillow
+python-multipart
+redis
+python-dotenv
+sqlalchemy
+psycopg2-binary
+alembic
+python-jose
+cryptography==42.0.8
+redis
+passlib==1.7.4
+bcrypt==4.0.1
+pydantic[email]
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch
+ultralytics
+opencv-python-headless
+minio
+celery
+paho-mqtt
+dlib
+face_recognition

@@ -1,0 +1,37 @@
+# 1. 屏蔽虚拟环境和超大依赖包 (6个G再见！)
+venv/
+env/
+.env/
+*/venv/
+*/env/
+node_modules/
+.npm/
+
+# 2. 屏蔽机密配置文件
+.env
+*.pem
+*.key
+
+# 3. 屏蔽 AI 模型权重和本地图片
+*.pt
+*.onnx
+*.weights
+models/yolov8n.pt
+*.JPG
+*.jpeg
+temp_*.jpg
+
+# 4. 屏蔽编译缓存和数据库
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+.pio/
+build/
+*.hex
+*.elf
+*.bin
+
+# 5. 系统垃圾
+.DS_Store
+.vscode/
